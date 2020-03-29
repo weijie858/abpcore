@@ -39,6 +39,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.BookStore.HttpApi.Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.BookStore.DbMigrator", "src\Acme.BookStore.DbMigrator\Acme.BookStore.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "note", "note", "{555B8CC4-EF74-4059-A16E-4A56ACE6FA24}"
+	ProjectSection(SolutionItems) = preProject
+		note.md = note.md
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
