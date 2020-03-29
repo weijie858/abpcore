@@ -20,6 +20,7 @@ namespace Acme.BookStore.Web.Menus
 
         private async Task ConfigureMainMenuAsync(MenuConfigurationContext context)
         {
+      
             if (!MultiTenancyConsts.IsEnabled)
             {
                 var administration = context.Menu.GetAdministration();
@@ -29,6 +30,17 @@ namespace Acme.BookStore.Web.Menus
             var l = context.ServiceProvider.GetRequiredService<IStringLocalizer<BookStoreResource>>();
 
             context.Menu.Items.Insert(0, new ApplicationMenuItem("BookStore.Home", l["Menu:Home"], "/"));
+
+            #region add by weijie
+            //<-- added the below code
+            context.Menu.AddItem(
+                new ApplicationMenuItem("BooksStore", l["Menu:BookStore"])
+                    .AddItem(
+                        new ApplicationMenuItem("BooksStore.Books", l["Menu:Books"], url: "/Books")
+                    )
+            );
+            //-->
+            #endregion
         }
     }
 }
