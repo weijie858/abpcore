@@ -1,12 +1,12 @@
-abpnext 学习笔记 
-地址 https://docs.abp.io/en/abp/latest
+abpnext 瀛︿範绗旇 
+鍦板潃 https://docs.abp.io/en/abp/latest
 
 
 
 
 https://docs.abp.io/en/abp/latest/Tutorials/Part-1?UI=MVC
 
-//项目信息
+//椤圭洰淇℃伅
 [17:53:51 INF] ABP CLI (https://abp.io)
 [17:53:51 INF] Version 2.3.0 (Stable channel)
 [17:53:53 INF] Creating your project...
